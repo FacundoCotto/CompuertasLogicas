@@ -1,16 +1,14 @@
-public class OrGate : IGate
+public class NotGate : IGate
 {
-    private ILogicValue input1;
-    private ILogicValue input2;
+    private ILogicValue input;
 
-    public OrGate(ILogicValue input1, ILogicValue input2)
+    public NotGate(ILogicValue input)
     {
-        this.input1 = input1;
-        this.input2 = input2;
+        this.input = input;
     }
 
     public bool Output()
     {
-        return (this.input1.Value() != this.input2.Value() || this.input1.Value() == this.input2.Value()) && (this.input1.Value() || this.input2.Value());
+        return !this.input.Value();
     }
 }
