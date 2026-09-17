@@ -1,4 +1,4 @@
 public interface ILogicValue
 {
-    bool Value();
+    bool Value { get; }
 }

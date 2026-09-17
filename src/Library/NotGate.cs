@@ -9,6 +9,6 @@ public class NotGate : IGate
 
     public bool Output()
     {
-        return !this.input.Value();
+        return !this.input.Value;
     }
 }

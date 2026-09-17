@@ -11,6 +11,6 @@ public class AndGate : IGate
 
     public bool Output()
     {
-        return this.input1.Value() == this.input2.Value() && this.input1.Value();
+        return this.input2.Value && this.input1.Value;
     }
 }

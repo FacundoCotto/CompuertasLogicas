@@ -8,8 +8,11 @@ public class GateOutput : ILogicValue
         this.gate = gate;
     }
 
-    public bool Value()
+    public bool Value
     {
-        return this.gate.Output();
+        get
+        {
+            return this.gate.Output();
+        }
     }
 }

@@ -11,6 +11,6 @@ public class OrGate : IGate
 
     public bool Output()
     {
-        return (this.input1.Value() != this.input2.Value() || this.input1.Value() == this.input2.Value()) && (this.input1.Value() || this.input2.Value());
+        return this.input1.Value || this.input2.Value;
     }
 }

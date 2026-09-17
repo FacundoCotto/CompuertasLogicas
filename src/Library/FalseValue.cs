@@ -1,8 +1,11 @@
 public class FalseValue : ILogicValue
 {
-    public bool Value()
+    public bool Value
     {
-        return false;
+        get
+        {
+            return false;
+        }
     }
 
 }
