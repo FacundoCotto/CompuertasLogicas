@@ -9,7 +9,9 @@ public class NotGateTests
         ILogicValue True = new TrueValue();
         IGate notGate = new NotGate(True);
 
-        Assert.That(notGate.Output(), Is.EqualTo(false));
+        bool result = notGate.Output();
+
+        Assert.That(result, Is.EqualTo(false));
     }
 
     [Test]
@@ -18,6 +20,8 @@ public class NotGateTests
         ILogicValue False = new FalseValue();
         IGate notGate = new NotGate(False);
 
-        Assert.That(notGate.Output(), Is.EqualTo(true));
+        bool result = notGate.Output();
+
+        Assert.That(result, Is.EqualTo(true));
     }
 }

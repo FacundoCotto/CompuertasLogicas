@@ -10,7 +10,9 @@ public class OrGateTests
         ILogicValue False2 = new FalseValue();
         IGate orGate = new OrGate(False1, False2);
 
-        Assert.That(orGate.Output(), Is.EqualTo(false));
+        bool result = orGate.Output();
+
+        Assert.That(result, Is.EqualTo(false));
     }
 
     [Test]
@@ -20,7 +22,9 @@ public class OrGateTests
         ILogicValue True = new TrueValue();
         IGate orGate = new OrGate(True, False);
 
-        Assert.That(orGate.Output(), Is.EqualTo(true));
+        bool result = orGate.Output();
+
+        Assert.That(result, Is.EqualTo(true));
     }
 
     [Test]
@@ -30,6 +34,8 @@ public class OrGateTests
         ILogicValue True1 = new TrueValue();
         IGate orGate = new OrGate(True1, True2);
 
-        Assert.That(orGate.Output(), Is.EqualTo(true));
+        bool result = orGate.Output();
+
+        Assert.That(result, Is.EqualTo(true));
     }
 }

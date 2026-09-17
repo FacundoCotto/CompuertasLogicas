@@ -10,7 +10,9 @@ public class AndGateTests
         ILogicValue False2 = new FalseValue();
         IGate andGate = new AndGate(False1, False2);
 
-        Assert.That(andGate.Output(), Is.EqualTo(false));
+        bool result = andGate.Output();
+
+        Assert.That(result, Is.EqualTo(false));
     }
 
     [Test]
@@ -20,7 +22,9 @@ public class AndGateTests
         ILogicValue True = new TrueValue();
         IGate andGate = new AndGate(True, False);
 
-        Assert.That(andGate.Output(), Is.EqualTo(false));
+        bool result = andGate.Output();
+
+        Assert.That(result, Is.EqualTo(false));
     }
 
     [Test]
@@ -28,8 +32,10 @@ public class AndGateTests
     {
         ILogicValue True2 = new TrueValue();
         ILogicValue True1 = new TrueValue();
-        IGate orGate = new AndGate(True1, True2);
+        IGate andGate = new AndGate(True1, True2);
 
-        Assert.That(orGate.Output(), Is.EqualTo(true));
+        bool result = andGate.Output();
+
+        Assert.That(result, Is.EqualTo(true));
     }
 }

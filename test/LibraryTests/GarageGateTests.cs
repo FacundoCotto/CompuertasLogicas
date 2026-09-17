@@ -12,7 +12,9 @@ public class GarageGateTests
 
         IGate garageGate = new GarageGate(a, b, c);
 
-        Assert.That(garageGate.Output(), Is.EqualTo(false));
+        bool result = garageGate.Output();
+
+        Assert.That(result, Is.EqualTo(false));
     }
 
     [Test]
@@ -24,7 +26,9 @@ public class GarageGateTests
 
         IGate garageGate = new GarageGate(a, b, c);
 
-        Assert.That(garageGate.Output(), Is.EqualTo(true));
+        bool result = garageGate.Output();
+
+        Assert.That(result, Is.EqualTo(true));
     }
 
     [Test]
@@ -36,7 +40,9 @@ public class GarageGateTests
 
         IGate garageGate = new GarageGate(a, b, c);
 
-        Assert.That(garageGate.Output(), Is.EqualTo(false));
+        bool result = garageGate.Output();
+
+        Assert.That(result, Is.EqualTo(false));
     }
 
     [Test]
@@ -48,7 +54,9 @@ public class GarageGateTests
 
         IGate garageGate = new GarageGate(a, b, c);
 
-        Assert.That(garageGate.Output(), Is.EqualTo(false));
+        bool result = garageGate.Output();
+
+        Assert.That(result, Is.EqualTo(false));
     }
 
     [Test]
@@ -60,7 +68,9 @@ public class GarageGateTests
 
         IGate garageGate = new GarageGate(a, b, c);
 
-        Assert.That(garageGate.Output(), Is.EqualTo(false));
+        bool result = garageGate.Output();
+
+        Assert.That(result, Is.EqualTo(false));
     }
 
     [Test]
@@ -72,7 +82,9 @@ public class GarageGateTests
 
         IGate garageGate = new GarageGate(a, b, c);
 
-        Assert.That(garageGate.Output(), Is.EqualTo(false));
+        bool result = garageGate.Output();
+
+        Assert.That(result, Is.EqualTo(false));
     }
 
     [Test]
@@ -84,7 +96,9 @@ public class GarageGateTests
 
         IGate garageGate = new GarageGate(a, b, c);
 
-        Assert.That(garageGate.Output(), Is.EqualTo(false));
+        bool result = garageGate.Output();
+
+        Assert.That(result, Is.EqualTo(false));
     }
 
 
@@ -97,6 +111,8 @@ public class GarageGateTests
 
         IGate garageGate = new GarageGate(a, b, c);
 
-        Assert.That(garageGate.Output(), Is.EqualTo(true));
+        bool result = garageGate.Output();
+
+        Assert.That(result, Is.EqualTo(true));
     }
 }
