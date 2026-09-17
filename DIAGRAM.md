@@ -43,7 +43,7 @@ classDiagram
         Output() bool
     }
 
-    % Relaciones
+    %% Relaciones
 
     LogicValue <|.. TrueValue
     LogicValue <|.. FalseValue
